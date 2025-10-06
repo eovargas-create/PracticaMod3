@@ -1,4 +1,4 @@
-import pyscopg2 
+import pyscopg2
 
 #conexión a la base de datos
 conexion = pyscopg2.connect(
