@@ -10,18 +10,18 @@ conexion = pyscopg2.connect(
     )
 
 #Crear cursos
-cursos = conexion.cursos()
+cursor = conexion.cursor()
 
 # Ejecutar consola
-cursos.execute("SELECT * FROM usuarios")
+cursor.execute("SELECT * FROM usuarios")
 #fetchone() = una fila
 #fetchmany(n) = hasta n filas
-registros = cursos.fetchall() #Recuperar todas las filas devueltas
+registros = cursor.fetchall() #Recuperar todas las filas devueltas
 #registros almacena en tuplas
 
 for fila in registros:
     print(fila)
 
 #Cerrar la conexión
-cursos.close()
+cursor.close()
 conexion.close()
