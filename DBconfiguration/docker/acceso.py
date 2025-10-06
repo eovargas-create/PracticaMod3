@@ -1,4 +1,4 @@
-import psycopg2
+import pyscopg2
 import getpass
 
 # Configuración de conexión a la base de datos en Docker
