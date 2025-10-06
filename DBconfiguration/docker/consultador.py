@@ -1,4 +1,4 @@
-import pyscopg2 # type: ignore
+import pyscopg2 
 
 #conexión a la base de datos
 conexion = pyscopg2.connect(
