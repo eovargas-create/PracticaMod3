@@ -9,7 +9,7 @@ conexion = pyscopg2.connect(
     password = "p4sw0rdDB",
     )
 
-#Crear cursos
+#Crear cursor
 cursor = conexion.cursor()
 
 # Ejecutar consola
