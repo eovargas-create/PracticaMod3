@@ -16,7 +16,7 @@ def conectar_db():
             port=DB_PORT,
             database=DB_NAME,
             user=DB_USER,
-            password=DB_PASSWORD
+            password=DB_PASSWORD,
         )
         return conn
     except Exception as e:
