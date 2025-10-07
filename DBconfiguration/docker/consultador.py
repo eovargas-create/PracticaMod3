@@ -6,7 +6,7 @@ conexion = pyscopg2.connect(
     port = "5432",
     database = "credenciales",
     user = "Admin",
-    password = "p4sw0rdDB",
+    password = "p4ssw0rdDB",
     )
 
 #Crear cursor
